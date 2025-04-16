@@ -63,7 +63,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
-Hiten Patel - [nishit296@fmail.com](mailto:nishit296@gmail.com)
+Hiten Patel - [nishit296@gmail.com](mailto:nishit296@gmail.com)
 
 ---
 
