@@ -1,351 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishit Bhavsar | Website Developer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nishit Bhavsar | Full Stack Developer</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Nishit<span>Bhavsar</span></div>
-                <ul class="nav-links">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
+  <!-- Animated background layers -->
+  <div class="bg fx-1"></div>
+  <div class="bg fx-2"></div>
+  <div class="bg fx-3"></div>
+
+  <!-- Header -->
+  <header id="header" class="glass">
+    <div class="container">
+      <nav>
+        <a class="logo" href="#home">Nishit<span>Bhavsar</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="burger" aria-label="Menu" aria-expanded="false">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero section">
+    <div class="container hero-content">
+      <div class="hero-text reveal">
+        <h1>Hi, I'm <span class="accent">Nishit Bhavsar</span></h1>
+        <h2 class="typing-text">
+          <span id="typeTarget">Full Stack Developer</span>
+          <span class="caret"></span>
+        </h2>
+        <p>
+          Enthusiastic BCA student passionate about creating efficient and
+          user-friendly digital solutions.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn primary">Contact Me</a>
+          <a href="#resume" class="btn outline">View Resume</a>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Hi, I'm <span>Nishit Bhavsar</span></h1>
-                    <h2>Website Developer</h2>
-                    <p>Enthusiastic BCA student with a strong foundation in programming and Website development.</p>
-                    <div class="hero-btns">
-                        <a href="#contact" class="btn primary-btn">Contact Me</a>
-                        <a href="#resume" class="btn secondary-btn">View Resume</a>
-                    </div>
-                    <div class="social-icons">
-                        <a href="https://github.com/nishit0209" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/nishit-bhavsar-6b1274345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:nishitbhavsar296@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-             
-                </div>
-            </div>
+        <div class="social">
+          <a href="https://github.com/nishit0209" class="text-decoration-none" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nishit-bhavsar-6b1274345" class="text-decoration-none" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:nishitbhavsar296@gmail.com" target="_blank" class="text-decoration-none" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
-    </section>
+      </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>About Me</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am Nishit Bhavsar, a dedicated BCA student with a solid foundation in programming and devlopment</p>
-                    <p>I have a passion for building efficient and scalable solutions, constantly exploring new technologies to enhance my skills. I thrive on tackling challenging projects that push me to grow as a developer and problem solver.</p>
-                    <div class="about-details">
-                        <div class="detail">
-                            <i class="fas fa-user"></i>
-                            <div>
-                                <h4>Name</h4>
-                                <p>Nishit Bhavsar</p>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>nishitbhavsar296@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Ahmedabad, Gujarat</p>
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>8141229229</p>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <img src="images/developer-illustration.svg" alt="" class="floaty"/>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll"><i class="fa-solid fa-angles-down"></i></a>
+
+        <!-- Profile image with floating animation -->
+    <div class="hero-visual reveal" aria-hidden="true">
+      <img src="./images/profile.jpg" alt="Nishit Bhavsar" class="profile-img"/>
+    </div>
+  </div>
+  <a href="#about" class="scroll-down" aria-label="Scroll"><i class="fa-solid fa-angles-down"></i></a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about section glass">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text reveal">
+          <p>
+            I am Nishit Bhavsar, a dedicated BCA student with expertise in full-stack
+            web development. I love building clean, responsive products that feel great to use.
+          </p>
+          <p>
+            I combine modern tech with practical problem solving to deliver delightful
+            digital experiences.
+          </p>
+
+          <div class="about-details">
+            <div class="detail card tilt reveal"><i class="fas fa-user"></i><div><h4>Name</h4><p class="text-white">Nishit Bhavsar</p></div></div>
+            <div class="detail card tilt reveal" style="--d:0.05s;"><i class="fas fa-envelope"></i><div><h4>Email</h4><p class="text-white">nishitbhavsar296@gmail.com</p></div></div>
+            <div class="detail card tilt reveal" style="--d:0.1s;"><i class="fas fa-map-marker-alt"></i><div><h4>Location</h4><p class="text-white">Ahmedabad, Gujarat</p></div></div>
+            <div class="detail card tilt reveal" style="--d:0.15s;"><i class="fas fa-phone"></i><div><h4>Phone</h4><p class="text-white">+91 8141229229</p></div></div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume">
-        <div class="container">
-            <div class="section-header">
-                <h2>My Resume</h2>
-                <div class="underline"></div>
+  <!-- Resume -->
+  <section id="resume" class="resume section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>My Resume</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="resume-download center reveal">
+        <p>Here’s a snapshot of my projects. Download my full CV for details.</p>
+        <a href="images/nishit_cv.pdf" class="btn primary" download="Nishit_Bhavsar_Resume.pdf">
+          <i class="fas fa-download"></i> Download Full Resume
+        </a>
+      </div>
+
+      <div class="resume-sections">
+        <div class="resume-section card reveal">
+          <h3 class="text-white"><i class="fas fa-code"></i > Projects</h3>
+
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <h4 class="text-white">Online Furniture Management System</h4>
+              <div class="meta"><span>PHP, MySQL</span><span>Apr 2024</span></div>
             </div>
-            <div class="resume-content">
-                <div class="resume-download">
-                    <p>Here's a summary of my projects, education, and skills.</p>
-                    <a href="images/nishit_cv.pdf" class="btn primary-btn" download="Nishit_Bhavsar_Resume.pdf"><i class="fas fa-download"></i> Download Full Resume</a>
-                </div>
-                
-                <div class="resume-sections">
-                    <!-- Projects Section -->
-                    <div class="resume-section">
-                        <h3><i class="fas fa-code"></i> Projects</h3>
-                        
-                        <div class="resume-item">
-                            <div class="resume-item-header">
-                                <h4>online furniture Management System</h4>
-                                <div class="resume-item-meta">
-                                    <span class="company">Php, MySQL</span>
-                                    <span class="duration">April 2024</span>
-                                </div>
-                            </div>
-                            <ul class="resume-item-list">
-                                <li>Provides services like browsing, purchasing, and managing furniture collections, bringing style and convenience directly to users' screens.</li>
-                                <li>Perfect for furniture stores, interior design businesses, or home decor platforms</li>
-                                <li>Enhances user experience with detailed product views, smart filtering, and a seamless shopping process.</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="resume-item">
-                            <div class="resume-item-header">
-                                <h4>Gym Management System</h4>
-                                <div class="resume-item-meta">
-                                    <span class="company">Php,MySQL</span>
-                                    <span class="duration">March 2024</span>
-                                </div>
-                            </div>
-                            <ul class="resume-item-list">
-                                <li>Provides services like membership management, workout tracking, and trainer scheduling, bringing fitness and organization directly to users' fingertips.</li>
-                                <li>Perfect for gyms, fitness centers, or personal training businesses.</li>
-                                <li>Enhances user experience with personalized plans, progress tracking, and seamless member-staff communication.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <ul>
+              <li>E-commerce platform with product, cart, and admin dashboard</li>
+              <li>Secure auth + role based access</li>
+              <li>Responsive UI across devices</li>
+              <li>MySQL for persistent storage</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <h4 class="text-white">Gym Management System</h4>
+              <div class="meta"><span>PHP, MySQL</span><span>Mar 2024</span></div>
             </div>
+            <ul>
+              <li>Member tracking, attendance & payments</li>
+              <li>Interfaces for staff and members</li>
+              <li>Stats & revenue reports</li>
+              <li>Secure data handling</li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2>My Skills</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="skills-content">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-php"></i></div>
-                            <h4>PHP</h4>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-js"></i></div>
-                            <h4>JavaScript</h4>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                            <h4>HTML5</h4>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-                            <h4>CSS3</h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-react"></i></div>
-                            <h4>React</h4>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                            <h4>AI/ML</h4>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-python"></i></div>
-                            <h4>Django</h4>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="skill-category">
-                    <h3>Databases & Tools</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-robot"></i></div>
-                            <h4>Cursor</h4>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-database"></i></div>
-                            <h4>MySQL</h4>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-robot"></i></div>
-                            <h4>Chatgpt</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills section glass">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>My Skills</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="skills-content">
+        <div class="skill-category reveal">
+          <h3>Frontend Development</h3>
+          <div class="chip-grid">
+            <div class="chip tilt"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="chip tilt"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="chip tilt"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="chip tilt"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+          </div>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2>My Projects</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/lr.jpg" alt="Virtual Audio Guide">
-                    </div>
-                    <div class="project-info">
-                        <h3>online furniture Management System</h3>
-                        <p>The Online Furniture Management System is a web-based platform designed to streamline the management, display, and sales of furniture items for both customers and administrators. This project showcases my ability to build full-stack applications, manage databases, and create responsive, user-friendly interfaces.</p>
-                        <div class="project-tech">
-                            <span>Html</span>
-                            <span>Css</span>
-                            <span>JavaScript</span>
-                            <span>Php</span>
-                            <span>Mysql</span>
-                           
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn small-btn" target="_blank">Live Demo</a>
-                            <a href="https://github.com/nishit0209/online_furniture" class="btn small-btn secondary-btn" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/plan3.jpg" alt="Café Management System">
-                    </div>
-                    <div class="project-info">
-                        <h3>Gym Management System</h3>
-                        <p>The Gym Management System is a comprehensive web application designed to manage gym operations, member subscriptions, trainer schedules, and workout plans. This project highlights my ability to develop functional, user-centric software with features tailored for both gym members and administrators.</p>
-                        <div class="project-tech">
-                            <span>Html</span>
-                            <span>Css</span>
-                            <span>JavaScript</span>
-                            <span>Php</span>
-                            <span>Mysql</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn small-btn" target="_blank">Live Demo</a>
-                            <a href="#" class="btn small-btn secondary-btn" target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="skill-category reveal">
+          <h3>Backend Development</h3>
+          <div class="chip-grid">
+            <div class="chip tilt"><i class="fab fa-php"></i> PHP</div>
+            <div class="chip tilt"><i class="fab fa-python"></i> Python</div>
+            <div class="chip tilt"><i class="fa-brands fa-python"></i> Djano</div>
+            <div class="chip tilt"><i class="fas fa-database"></i> MySQL</div>
+            <div class="chip tilt"><i class="fas fa-server"></i> REST APIs</div>
+          </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contact Me</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p>I'm currently seeking internship opportunities to apply my academic knowledge to real-world challenges. Feel free to reach out if you have any opportunities or questions.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>nishitbhavsar296@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>8141229229</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Ahmedabad, Gujarat</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social-icons">
-                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/nishit-bhavsar-6b1274345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:nishitbhavsar296@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm" action="https://formspree.io/f/moveqwob" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <input type="hidden" name="_next" value="thanks.html">
-                        <button type="submit" class="btn primary-btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
+        <div class="skill-category reveal">
+          <h3>Tools & Technologies</h3>
+          <div class="chip-grid">
+            <div class="chip tilt"><i class="fas fa-code-branch"></i> Git</div>
+            <div class="chip tilt"><i class="fas fa-terminal"></i> VS Code</div>
+            <div class="chip tilt"><i class="fas fa-terminal"></i> Cursor</div>
+            <div class="chip tilt"><i class="fas fa-robot"></i> AI Tools</div>
+            <div class="chip tilt"><i class="fas fa-mobile-alt"></i> Responsive Design</div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Hiten Patel. All Rights Reserved.</p>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#resume">Resume</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>Since there is no selected code, I will provide a general improvement to the existing code. Here's an updated version of the HTML structure with some improvements:
+  <!-- Projects -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>My Projects</h2>
+        <div class="underline"></div>
+      </div>
 
+      <div class="cards">
+        <article class="project card hover-rise tilt reveal">
+          <div class="project-image"><img src="./images/lr.jpg" alt="Online Furniture Management System"/></div>
+          <div class="project-info">
+            <h3 class="text-white">Online Furniture Management System</h3>
+            <p>Complete e-commerce solution with catalog, cart, accounts, and inventory dashboard.</p>
+            <div class="project-tech">
+              <span class="text-white">HTML5</span><span class="text-white">CSS3</span><span class="text-white">JavaScript</span><span class="text-white">PHP</span><span class="text-white">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn sm text-decoration-none text-white outline">Live Demo</a>
+              <a href="https://github.com/nishit0209/online_furniture" class="btn sm outline" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project card hover-rise tilt reveal" style="--d:0.05s;">
+          <div class="project-image"><img src="./images/plan3.jpg" alt="Gym Management System"/></div>
+          <div class="project-info">
+            <h3 class="text-white">Gym Management System</h3>
+            <p>Member tracking, attendance, workout plans, and payment processing for gyms.</p>
+            <div class="project-tech">
+              <span class="text-white">HTML5</span><span class="text-white">CSS3</span><span class="text-white">JavaScript</span><span class="text-white">PHP</span><span class="text-white">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn sm text-white outline">Live Demo</a>
+              <a href="#" class="btn sm outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact section glass">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Contact Me</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info reveal">
+          <h3>Get In Touch</h3>
+          <p>Open to internships and collaborations. Let’s build something great!</p>
+          <div class="contact-details">
+            <div class="contact-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>nishitbhavsar296@gmail.com</p></div></div>
+            <div class="contact-item"><i class="fas fa-phone"></i><div><h4>Phone</h4><p>+91 8141229229</p></div></div>
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><h4>Location</h4><p>Ahmedabad, Gujarat, India</p></div></div>
+          </div>
+          <div class="social">
+            <a href="https://github.com/nishit0209" class="text-decoration-none" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nishit-bhavsar-6b1274345" class="text-decoration-none" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:nishitbhavsar296@gmail.com" class="text-decoration-none" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <form id="contactForm" action="https://formspree.io/f/xblgegrj" method="POST" class="contact-form card reveal">
+          <div class="form-group"><input type="text" name="name" placeholder="Your Name" required/></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Your Email" required/></div>
+          <div class="form-group"><input type="text" name="subject" placeholder="Subject" required/></div>
+          <div class="form-group"><textarea name="message" placeholder="Your Message" required></textarea></div>
+          <button class="btn primary w-full" type="submit">Send Message</button>
+          <p id="formMsg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="yr"></span> Nishit Bhavsar. All Rights Reserved.</p>
+      <div class="footer-links">
+                    <a href="#home" class="text-decoration-none mx-2 text-light">Home</a>
+                    <a href="#about" class="text-decoration-none mx-2 text-light">About</a>
+                    <a href="#resume" class="text-decoration-none mx-2 text-light">Resume</a>
+                    <a href="#skills" class="text-decoration-none mx-2 text-light">Skills</a>
+                    <a href="#projects" class="text-decoration-none mx-2 text-light">Projects</a>
+                    <a href="#contact" class="text-decoration-none mx-2 text-white">Contact</a>
+                </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/script.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
