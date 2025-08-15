@@ -1,4 +1,4 @@
-# Hiten Patel - Portfolio Website
+# Nishit Bhavsar - Portfolio Website
 
 A modern, responsive portfolio website for Hiten Patel, a software developer. This website showcases skills, projects, and provides contact information.
 
@@ -63,8 +63,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
-Hiten Patel - [hp040912@gmail.com](mailto:hp040912@gmail.com)
+Nishit bhavsar - [nishit296@gmail.com](mailto:nishit296@gmail.com)
 
 ---
 
-Created with ❤️ by Hiten Patel 
+Created with ❤️ Nishit bhavsar
