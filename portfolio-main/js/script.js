@@ -39,18 +39,51 @@ const roles = [
   "Lifelong Learner"
 ];
 const typeTarget = document.getElementById('typeTarget');
-let idx = 0, char = 0, deleting = false;
-function typeLoop(){
-  const word = roles[idx % roles.length];
-  typeTarget.textContent = word.slice(0, char);
-  if(!deleting && char <= word.length){ char++; }
-  if(deleting && char >= 0){ char--; }
-  if(char === word.length + 10){ deleting = true; }
-  if(char === 0 && deleting){ deleting = false; idx++; }
-  const speed = deleting ? 40 : 80;
-  setTimeout(typeLoop, speed);
-}
-typeLoop();
+    const texts = ['Full Stack Developer','PHP Developer','Python Developer','Web Designer'];
+     let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    
+    function type() {
+      const currentText = texts[textIndex];
+      
+      if (isDeleting) {
+        typeTarget.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        typeTarget.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+      }
+      
+      if (!isDeleting && charIndex === currentText.length) {
+        isDeleting = true;
+        setTimeout(type, 1500);
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(type, 500);
+      } else {
+        const speed = isDeleting ? 100 : 150;
+        setTimeout(type, speed);
+      }
+    }
+    
+    setTimeout(type, 1000);
+    
+// let idx = 0, char = 0, deleting = false;
+// function typeLoop(){
+//   const word = roles[idx % roles.length];
+//   typeTarget.textContent = word.slice(0, char);
+//   if(!deleting && char <= word.length){ char++; }
+//   if(deleting && char >= 0){ char--; }
+//   if(char === word.length + 10){ deleting = true; }
+//   if(char === 0 && deleting){ deleting = false; idx++; }
+//   const speed = deleting ? 40 : 80;
+//   setTimeout(typeLoop, speed);
+// }
+// typeLoop();
+
+
 
 /* ===== Reveal on Scroll ===== */
 const observer = new IntersectionObserver((entries)=>{
